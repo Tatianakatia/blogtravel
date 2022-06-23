@@ -1,0 +1,32 @@
+.All-Posts {
+  /* position: absolute; */
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 68.52%;
+
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  
+  line-height: 1rem;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: -0.5px;
+
+  }
+.Post-Title{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  color:rgb(6, 78, 6);
+}
+.Post-Summary{
+  font-family: Inter;
+  font-style: normal;
+  font-size: 28px;
+}
+
