@@ -1,0 +1,23 @@
+.Wellcome {
+  /* position: absolute; */
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 68.52%;
+
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  
+  line-height: 1rem;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: -0.5px;
+
+  }
+
+  li {
+    list-style-type: "none";
+  }

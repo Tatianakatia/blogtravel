@@ -1,6 +1,6 @@
 import logo from './assets/logoversion1.jpg';
 import './App.css';
-import Welcome from './components/Welcome';
+import Welcome from './components/welcome/Welcome';
 import AllPosts from './components/allposts/AllPosts';
 import Post from './components/Post';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
@@ -22,8 +22,8 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="post-menu">
-              <Nav.Link as={NavLink} to="/">Posts</Nav.Link>
-              <Nav.Link as={NavLink} to="/Welcome">Welcome</Nav.Link> 
+              <Nav.Link as={NavLink} to="/">Home</Nav.Link>
+              <Nav.Link as={NavLink} to="/Welcome">About us</Nav.Link> 
               <Nav.Link as={NavLink} to="/PostDetail">Write</Nav.Link>
             </Nav>
           </Navbar.Collapse>
