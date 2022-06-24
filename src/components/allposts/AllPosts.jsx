@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import Post from '../Post'
+import Post from '../post/Post'
 import PostForm from '../PostForm'
 import './AllPosts.css';
 
@@ -28,25 +28,14 @@ const AllPosts = () => {
       <Post post={post} />
     </div>)
 
-
-  const addPost = (post) => {
-    axios.post("http://localhost:8080/post", post)
-      .then(response => {
-        getAllPosts();
-        console.log(addPost)
-      })
-      .catch(error => {
-        console.log(error);
-      })
-  }
-
+  
   return (
       <Container className="All-Posts">
         <Row>
           {/*List All Posts */}
           <Col>{postList}</Col>
           {/* Form to insert new post  */}
-          <Col><PostForm submitForm={addPost} /></Col>
+          <Col></Col>
         </Row>
       </Container>
 

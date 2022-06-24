@@ -16,7 +16,7 @@ const PostDetail = () => {
             .then(response => {
                 setPost(response.data)
                 console.log(response.data)
-              
+
             })
             .catch(error => {
                 console.log(error)
@@ -28,7 +28,8 @@ const PostDetail = () => {
         <>
             <div>Post id is {post_id}</div>
             <h1>{post.title}</h1>
-            <h2>{post.post_id}</h2>
+            <h2>{post.summary}</h2>
+            <h2>{post.content}</h2>
         </>
     )
 }

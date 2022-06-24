@@ -21,3 +21,14 @@
   li {
     list-style-type: "none";
   }
+
+  p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    list-style: none;
+    margin-left:5rem;
+    margin-right: 5rem;
+    font-size: 1.3rem;
+    
+  }

@@ -5,6 +5,7 @@ const PostForm = (props) => {
     const [postTitle, setPostTitle] = useState('');
     const [userId, setUserId] = useState('');
     const [summary, setSummary]= useState('');
+    const [postImg, setPostImg] = useState('');
 
     const addPost = (e) =>{
         e.preventDefault();
@@ -12,9 +13,15 @@ const PostForm = (props) => {
 
             "title" : postTitle,
             "summary": summary,
-            "user_id" : userId
+            "user_id" : userId,
+            "post_img": postImg
         }
         console.log(post);
+        // setPostTitle(''),
+        // setSummary(''),
+        // setPostImg(''),
+        // setUserId(''),
+      
         props.submitForm(post);
     }
 
@@ -30,6 +37,16 @@ const PostForm = (props) => {
       <Form.Label>Summary</Form.Label>
       <Form.Control type="text" placeholder="Enter summary" value={summary}
       onChange ={event=>setSummary(event.target.value)}/>
+    </Form.Group>
+    <Form.Group className="mb-3" controlId="formImg">
+      <Form.Label>Image Number</Form.Label>
+      <Form.Control type="text" placeholder="Enter image number" value={postImg}
+      onChange ={event=>setPostImg(event.target.value)}/>
+    </Form.Group>
+    <Form.Group className="mb-3" controlId="formUser">
+      <Form.Label>user Number</Form.Label>
+      <Form.Control type="text" placeholder="Enter user number" value={userId}
+      onChange ={event=>setUserId(event.target.value)}/>
     </Form.Group>
     <Button 
         variant="primary" 
