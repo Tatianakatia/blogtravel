@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import './PostDetails.css'
 
 const PostDetail = () => {
     const [post, setPost] = useState({});
@@ -12,7 +13,7 @@ const PostDetail = () => {
     }, [])
 
     function getPostById(post_id) {
-        axios.get(`http://localhost:8080/posts/${post_id}`)
+        axios.get(`http://localhost:8080/post/${post_id}`)
             .then(response => {
                 setPost(response.data)
                 console.log(response.data)
@@ -25,12 +26,10 @@ const PostDetail = () => {
 
 
     return (
-        <>
-            <div>Post id is {post_id}</div>
+        <div className="post-details">
             <h1>{post.title}</h1>
-            <h2>{post.summary}</h2>
-            <h2>{post.content}</h2>
-        </>
+            <p>{post.content}</p>
+        </div>
     )
 }
 

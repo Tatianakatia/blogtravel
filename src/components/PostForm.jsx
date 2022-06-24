@@ -4,7 +4,7 @@ import { Form, Button } from 'react-bootstrap';
 const PostForm = (props) => {
     const [postTitle, setPostTitle] = useState('');
     const [userId, setUserId] = useState('');
-    const [summary, setSummary]= useState('');
+    const [content, setContent]= useState('');
     const [postImg, setPostImg] = useState('');
 
     const addPost = (e) =>{
@@ -12,7 +12,7 @@ const PostForm = (props) => {
         let post = {
 
             "title" : postTitle,
-            "summary": summary,
+            "content": content,
             "user_id" : userId,
             "post_img": postImg
         }
@@ -33,10 +33,10 @@ const PostForm = (props) => {
        onChange ={event=>setPostTitle(event.target.value)} />
     </Form.Group>
 
-    <Form.Group className="mb-3" controlId="formSummary">
-      <Form.Label>Summary</Form.Label>
-      <Form.Control type="text" placeholder="Enter summary" value={summary}
-      onChange ={event=>setSummary(event.target.value)}/>
+    <Form.Group className="mb-3" controlId="formContent">
+      <Form.Label>Content</Form.Label>
+      <Form.Control type="text" placeholder="Enter text" value={content}
+      onChange ={event=>setContent(event.target.value)}/>
     </Form.Group>
     <Form.Group className="mb-3" controlId="formImg">
       <Form.Label>Image Number</Form.Label>

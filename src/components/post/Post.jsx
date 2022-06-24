@@ -6,33 +6,30 @@ import './Post.css';
 const Post = (props) => {
   return (
     <>
-{/* 
-{require(`../assets/${props.post.post_img}.jpg`)} */}
+{/* {require(`../assets/${props.post.post_img}.jpg`)} */}
     <Card className="posts">
-    <Card.Title >{props.post.title}</Card.Title>
+    
+      <Card.Img variant="top" src={require(`../../assets/image1.jpg`)} className="image"/>
       <Card.Body> 
-      
-      <Card.Img 
-        variant="top" 
-        src={require(`../../assets/image1.jpg`)} 
-        className="image"
-        /> 
-        
-          {/* <Card.Text className="Post-Summary">
-           {props.post.summary} 
-          </Card.Text> */}
-          <Button 
-            variant="primary" 
-            as={NavLink} 
-            to={'/post/'+props.post.post_id}>
-              Reading more
-          </Button>
-       </Card.Body>
+        <Card.Title >{props.post.title}</Card.Title>
+        <Card.Text className="Post-Content"></Card.Text>
+        <Button variant="primary" as={NavLink} to={'/post/'+props.post.post_id}>Reading more</Button>
+      </Card.Body>
     </Card>
-    {/* <h1>{props.post.title}</h1>  */}
-     {/* <h4>{props.post.summary}</h4> */}
+
     </>
   )
 }
 
 export default Post
+
+{/* <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={require(`../assets/1.jpg`)} />
+      <Card.Body>  
+        <Card.Title>{props.dept.dep_name}</Card.Title>
+          <Card.Text>
+          This is team {props.dept.team_id}.
+          </Card.Text>
+          <Button variant="primary" as={NavLink} to={'/department/'+props.dept.dep_id}>Go somewhere</Button>
+       </Card.Body>
+    </Card> */}
