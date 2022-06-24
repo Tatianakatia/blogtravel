@@ -21,7 +21,7 @@ function App() {
           <Navbar.Brand to="/"></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="post-menu">
               <Nav.Link as={NavLink} to="/">Posts</Nav.Link>
               <Nav.Link as={NavLink} to="/Welcome">Welcome</Nav.Link> 
               <Nav.Link as={NavLink} to="/PostDetail">Write</Nav.Link>
@@ -30,7 +30,7 @@ function App() {
         </Container>
       </Navbar>
 
-      <Routes>
+      <Routes >
         <Route path="/Welcome" element={<Welcome />} />
         <Route path="/Post" element={<Post />} />
         <Route path="/Post/:post_id" element={<PostDetail />} />

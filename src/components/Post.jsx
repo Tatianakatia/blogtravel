@@ -14,7 +14,7 @@ const Post = (props) => {
           <Button variant="primary" onClick={props.post.summary}>Reading more</Button>
        </Card.Body>
     </Card>
-    <h1>{props.post.title}</h1>s
+    <h1>{props.post.title}</h1>
     <h4>{props.post.summary}</h4>
     </>
   )
