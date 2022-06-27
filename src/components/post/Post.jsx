@@ -7,13 +7,14 @@ const Post = (props) => {
   return (
     <>
 {/* {require(`../assets/${props.post.post_img}.jpg`)} */}
-    <Card className="posts">
-    
-      <Card.Img variant="top" src={require(`../../assets/image1.jpg`)} className="image"/>
+    <Card className="post" style={{ width: '18rem' }}>
+      <Card.Title >{props.post.title}</Card.Title>
+      <Card.Img style={{ borderRadius: '50rem' }} variant="top" src={require(`../../assets/2.jpg`)} />
+      <Button  variant="primary" as={NavLink} to={'/post/'+props.post.post_id}>Reading more</Button>
       <Card.Body> 
-        <Card.Title >{props.post.title}</Card.Title>
-        <Card.Text className="Post-Content"></Card.Text>
-        <Button variant="primary" as={NavLink} to={'/post/'+props.post.post_id}>Reading more</Button>
+        
+        {/* <Card.Text className="Post-Content">{props.post.summary}</Card.Text> */}
+        
       </Card.Body>
     </Card>
 

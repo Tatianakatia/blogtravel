@@ -6,7 +6,8 @@
   height: 15rem;
   justify-content: center;
 }
-.posts{
+.post{
+  font-family: Roboto, sans-serif;
   margin-top: 2rem;
   margin-bottom: 5rem;
   margin-left: 5rem;

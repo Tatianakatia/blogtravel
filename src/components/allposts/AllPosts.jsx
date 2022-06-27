@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Post from '../post/Post'
-import PostForm from '../PostForm'
+import PostForm from '../postform/PostForm'
 import './AllPosts.css';
 
 const AllPosts = () => {
@@ -34,8 +34,6 @@ const AllPosts = () => {
         <Row>
           {/*List All Posts */}
           <Col>{postList}</Col>
-          {/* Form to insert new post  */}
-          <Col></Col>
         </Row>
       </Container>
 

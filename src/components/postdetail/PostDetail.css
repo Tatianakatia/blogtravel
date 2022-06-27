@@ -1,4 +1,4 @@
-.post-details{
+.post-detail{
   font-family: sans-serif;
   font-style: normal;
 
@@ -9,10 +9,15 @@
 
 }
 p{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   text-align: justify;
   text-size-adjust: 1rem;
   color: rgb(1, 25, 1);
+}
+
+.title-post-detail{
+  color:darkgreen;
 }
 
 

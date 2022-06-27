@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import './PostDetails.css'
+import './PostDetail.css'
 
 const PostDetail = () => {
     const [post, setPost] = useState({});
@@ -26,9 +26,10 @@ const PostDetail = () => {
 
 
     return (
-        <div className="post-details">
-            <h1>{post.title}</h1>
+        <div className="post-detail">
+            <h1 className="title-post-detail">{post.title}</h1>
             <p>{post.content}</p>
+            <img src="" />
         </div>
     )
 }
